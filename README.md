@@ -16,7 +16,6 @@
 
 > 💾 **데이터 다운로드 링크 예시**  
 > [🔗 Dacon Artist ](https://dacon.io/competitions/official/236006/overview/description)  
-> ※ 실제 경로는 직접 설정해주세요.
 
 ---
 
@@ -76,7 +75,7 @@ test_df[["id", "artist"]].to_csv("sub.csv", index=False)
 ⸻
 
 📈 제출 결과
-	•	평가 지표: RMSLE (캐글 방식)
+	•	평가 지표: Macro F1 Score
 	•	📊 제출 점수: 0.53395
 
 ⸻
