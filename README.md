@@ -56,6 +56,7 @@ model.train(
     project='art_classify',
     name='yolo11s-local'
 )
+```
 
 
 
@@ -63,13 +64,14 @@ model.train(
 
 🧪 테스트 예측
 
+```python
 results = model.predict(source='./test', imgsz=224)
 predicted_labels = [model.names[int(r.probs.top1)] for r in results]
 
 test_df = pd.read_csv("test.csv")
 test_df["artist"] = predicted_labels
 test_df[["id", "artist"]].to_csv("sub.csv", index=False)
-
+```
 
 
 ⸻
